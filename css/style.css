@@ -1,0 +1,36 @@
+* 
+{
+  font-family: 'gillsansmt';
+  src: url('../fonts/gillsansmt.eot');
+  src: local("gillsansmt"),  url('../fonts/gillsansmt.woff') format("woff"), url('../fonts/gillsansmt.ttf') format("truetype");
+
+}
+
+.subheader_bt {
+    font-family: 'gillsansmt'
+    color: $pink-color;
+    padding: 9.6px 64px;
+    margin: 0 0 0 16px;
+    display:inline-block;
+    border:2px solid #e91e63;
+    position:relative;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:20px;
+  
+    background-image: 
+      linear-gradient(to top, #f2f2f2 50%, #e91e63 50%),
+      linear-gradient(to top, #e91e63 50%, transparent 50%);
+    
+    -webkit-background-clip: text,padding-box;
+    background-clip: text,padding-box;
+    -webkit-text-fill-color: transparent;
+    color: transparent;  
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.5s ease-in-out;
+  }
+  
+  .subheader_bt:hover{
+    background-position: bottom;
+  }
