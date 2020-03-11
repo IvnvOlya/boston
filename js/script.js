@@ -1,11 +1,5 @@
 $(document).ready(function(){
-    $('.menu').on("click","a",function(event) {
-    event.preventDefault();
-
-    var id = $(this).attr('href'),
-
-    top = $(id).offset().top;
-
-    $('body,html').animate({scrollTop: top}, 30000);
-)};
-    })
+    $('.menu_link').mouseover(function(){
+    $(this).css('color', '#e91e63');
+});
+});
